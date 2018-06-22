@@ -299,9 +299,9 @@ body {
   
   .fade {
     -webkit-animation-name: fade;
-    -webkit-animation-duration: 1.5s;
+    -webkit-animation-duration: 50.5s;
     animation-name: fade;
-    animation-duration: 100.9s;
+    animation-duration:  100.9s;
   }
   
   @-webkit-keyframes fade {
