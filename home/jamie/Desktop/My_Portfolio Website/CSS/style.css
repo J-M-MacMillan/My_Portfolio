@@ -1,6 +1,6 @@
 body{
     background-image: url("https://images.duckduckgo.com/iu/?u=http%3A%2F%2Flegacybluetattoo.com%2Fwp-content%2Fuploads%2F2015%2F11%2Fblue-abstract-background-desktop-hd-wallpaper.png&f=1");
-    /*opacity: 1.0; */
+    opacity: 2.0;
    
   }
 
@@ -11,47 +11,84 @@ body{
 
 #leadPageImage{
     border-style: solid;
-    border-width: 0px;
+    border-width:0px;
     border-bottom-color: blue;
     position: relative;
     left: 15%;
-    margin-top: 0px;
+    margin-top: -5px;
     margin-bottom: 5px;
     width: 70%;
     height: 450px; 
-    /*opacity: 1.0;  */
-    box-sizing: border-box;   
+   /* opacity: 0.5;*/
+    box-sizing: border-box; 
+       
 }
 
-#welcome{
+.containerA{
+
+    border-style: solid;
+    border-width: 0px;
+    border-bottom-color: rgb(240, 178, 9);
+    margin-top: 0px;
+    height: 110px;
+    transform: translate(-0%, -0%);
+}
+
+.containerA span{
+    /*color: rgb(247, 232, 232);*/
+    text-transform: uppercase;
+    display: block;
+}
+
+.text1{
     border-style: solid;
     border-width: 0px;
     border-bottom-color:rgb(248, 242, 225);;
     position: relative;
     left: 0%;
     margin-top: 10px;
-    margin-bottom: 1px;
+    margin-bottom: 5px;
     width: 100%;
-    height: auto;   
+    height: 50px;   
     text-align: center;
     font-size: 35px;
-    color: rgb(248, 242, 225);    
+    color: white;    
     padding: 1px;
+    letter-spacing: 4px;
+    animation: text 10s 1;
+    
 }
 
-#welcome2{
+.text2{
     border-style: solid;
-    border-width: 0px;
-    border-bottom-color: green;
+    border-width: 3px;
+    border-radius: 5px;
     position: relative;
-    left: 25%;
-    margin-top: 2px;
+    margin: auto;
+    margin-top: 0px;
     margin-bottom: 1px;
-    width: 50%;
+    width: 22%;
     height: auto;   
     text-align: center;
-    font-size: 1px;
-    color: #D4AF37;    
+    font-size: 22px;
+    color: #D4AF37;  
+      
+}
+
+@keyframes text {
+    0%{
+        color: black;
+        margin-bottom: -40px;
+    }
+30%{
+    letter-spacing: 25px;
+    margin-bottom: -40px;
+}
+85%{
+    letter-spacing: 8px;
+    margin-bottom: -40px;
+}
+
 }
 
 #welcomeMsg{
@@ -89,12 +126,13 @@ body{
    /* background-color: DodgerBlue;*/
     position: relative;
     left: 12%;
-    margin-top: 220px;
+    margin-top: 200px;
     width: 75%;
     height: 20px;
     text-align: center; 
     font-size: 30px;
-    font-weight: bolder;    
+    font-weight: bolder;
+    opacity: 1.9;   
   }
   
   .flex-container > div {
@@ -109,9 +147,15 @@ body{
     font-weight: bolder;
   }
 
+  @keyframes btn {
+    from {background-color: orange;}
+    to {background-color: rgb(15, 30, 238);}
+
+  } 
+
   .btn{
     /*width: 100px;*/
-    font-size: 40px;
+    font-size: 50px;
     color: yellow;
     font-weight: bolder;
     text-align: center;
@@ -121,7 +165,11 @@ body{
     width: 10%;
     height: 40px;
     padding: 2px 2px;
-    background-color: darkorange;    
+    background-color: darkorange;  
+    animation-name: btn;
+    animation-delay: 10s;
+    animation-duration: 2s;
+    animation-iteration-count: infinite; 
  }
 
   #enterSiteArrow{      
@@ -140,6 +188,8 @@ body{
 
   a{
       color: white;
+      font-weight: bolder;
+      font-size: 15px;
   }
 
   .flex-container1 {
